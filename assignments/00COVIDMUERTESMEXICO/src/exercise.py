@@ -67,8 +67,14 @@ def main():
             if num4 == 1 :
                 print('-----------------------------------------------------------------')
                 print('De acuerdo con la OMS, los sintomas de COVID-19 son los siguientes:')
+                sintomas=['- Fiebre', '- Tos', '- Cansancio', '- Pérdida del gusto o del olfato']
+                #matrices que digan los sintomas 
+            elif num5== 2:
+                #hacer contador con las respuestas que vaya dando la persona
+               print('') 
             else:
                 print('-----------------------------------------------------------------')
+
         
         elif num == 5 :
             #recomendaciones de prevención 
@@ -90,6 +96,7 @@ def main():
                 print('- Evite ir a lugares bastante concurridos.')
                 print('')
                 #FALTANTE:Poner para que pregunte si se quiere regresar al inicio
+                reg = input ('¿Quieres volver al menú princial?')
                
             elif p_num == 2:
                 print('-----------------------------------------------------------------')
@@ -101,6 +108,7 @@ def main():
                 print('- No utilice mascarillas con válvulas.')
                 print('')
                 #FALTANTE:Poner para que pregunte si se quiere regresar al inicio
+                reg = input ('¿Quieres volver al menú princial?')
 
             elif p_num == 3:
                 print('-----------------------------------------------------------------')
