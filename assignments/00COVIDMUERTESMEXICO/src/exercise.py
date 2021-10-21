@@ -19,13 +19,14 @@ def main():
         print("4.- Sintomas de COVID-19")
         #en este apartado entran las preguntas y dependiendo de cuantas contestes te dice da recomendaciones de que hacer
         num=int(input("Teclee el numero que coorresponda al apartado que sea de su interés: "))
-        if num == "1" :
+        if num == 1 :
             print('¿A que nivel te gustaría consultar los datos?')
             print('')
             print(' 1.- Nacional ')
             print(' 2.- Estatal ')
             num1= int(input())
-                if 
+            if num1== 1:
+                print()
         elif num == 2 :
             print('¿A que nivel te gustaría consultar los datos? ')
             print(' ')
