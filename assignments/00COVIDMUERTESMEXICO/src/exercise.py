@@ -1,30 +1,51 @@
 def main():
     #escribe tu código abajo de esta línea
     pass
-    reg = si 
+    reg = "si" 
+    print('-------------------------------------------')
+    print('Base de datos COVID-19 México')
+    print(' ')
     nomb = input('¿Cual es tu nombre? ')
     print ('Hola ' + str(nomb))
     print ('Este programa prensetara datos sobre las muertes por covid en México desde Marzo 18 2020 hasta Octubre 18 2021')
     print (' ')
-    while (reg == si): 
-        print ('Seleccione de las siguientes opciones')
-    
-        print ('1.- Muertes totales en México de Marzo hasta Octubre.')
-        print ('2.- Muertes totales por estado.')
-        print ('3.- Grafica de muertes entre hombres y mujeres')
-        print ('4.- Grafica de muertes entre tipo de paciente')
-        print ('5.- Cree tener sintomas de covid')
-    
-        opc = input (int('Selecione su opción'))
-
-        if opc == 1:
-            print ('En méxico hay un total de 287,477 mil muertes acumuladas a causa de covid')
-            print ('¿Desea volver al menu principal?')
-            reg = input ('')
-        elif opc == 2:
-            print ('hjkghngk')
-        else:
-            print ('sdnjfns')
+    while (reg == "si"): 
+        print("1.-Numero de Muertes por covid ")
+        #dentro de este habrán mas opciones para mostrar la grafica de definciones, a nivel nacional o los puros datos por estado
+        print('2.- Numero de casos activos')
+        #también da la opción de ver los datos a nivel estatal o nacional
+        print("3.- Semaforo Epidemologico")
+        #también da la opción de ver los datos a nivel estatal o nacional
+        print("4.- Sintomas de COVID-19")
+        #en este apartado entran las preguntas y dependiendo de cuantas contestes te dice da recomendaciones de que hacer
+        num=int(input("Teclee el numero que coorresponda al apartado que sea de su interés: "))
+        if num == "1" :
+            print('¿A que nivel te gustaría consultar los datos?')
+            print(' ')
+            print(' 1.- Nacional ')
+            print(' 2.- Estatal ')
+            num1= int(input())
+        elif num == 2 :
+            print('¿A que nivel te gustaría consultar los datos? ')
+            print(' ')
+            print(' 1.- Nacional ')
+            print(' 2.- Estatal ')
+            num2= int(input())
+        elif num == 3 :
+            print('¿A que nivel te gustaría consultar los datos? ')
+            print(' ')
+            print(' 1.- Nacional ')
+            print(' 2.- Estatal ')
+            num3= int(input())
+        elif num == 4 :
+            print('¿A que nivel te gustaría consultar los datos? ')
+            print(' ')
+            print(' 1.- Nacional ')
+            print(' 2.- Estatal ')
+            num4= int(input())
+        else :
+        #que te vuelva a preguntar hasta que contestes un numero
+            print('Porfavor ingrese una opcion valida')
     
 
 
