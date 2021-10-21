@@ -1,3 +1,6 @@
+def semaforos():
+    #aquí van en que semaforo se encuentran los estados 
+  sinaloa = "verde"  
 def main():
     #escribe tu código abajo de esta línea
     pass
@@ -74,7 +77,10 @@ def main():
                 #matriz estados amarillo
                 reg = int ('¿Desea volver al menu principal? ')
             elif num3 == 4 : 
-                #
+                #matriz estados verdes
+                reg = int ('¿Desea volver al menu principal? ')
+            else: 
+                print ('Porfavor ingrese una opcion valid')
 
         elif num == 4 :
             #sintomas, agregar un contador por cada pregunta 
