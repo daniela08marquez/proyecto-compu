@@ -7,7 +7,7 @@ def main():
     print(' ')
     nomb = input('¿Cual es tu nombre? ')
     print ('Hola ' + str(nomb))
-    print ('Este programa prensetara datos sobre las muertes por covid en México desde Marzo 18 2020 hasta Octubre 18 2021')
+    print ('Este programa prensetara datos sobre los casos por covid, y las muertes por covid  en México desde Marzo 18 2020 hasta Octubre 18 2021')
     print (' ')
     while (reg == "si"): 
         print("1.-Numero de Muertes por covid ")
@@ -21,7 +21,7 @@ def main():
         num=int(input("Teclee el numero que coorresponda al apartado que sea de su interés: "))
         if num == "1" :
             print('¿A que nivel te gustaría consultar los datos?')
-            print(' hola')
+            print('')
             print(' 1.- Nacional ')
             print(' 2.- Estatal ')
             num1= int(input())
