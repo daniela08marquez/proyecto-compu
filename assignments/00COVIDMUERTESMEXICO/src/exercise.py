@@ -68,7 +68,53 @@ def main():
         elif num == 5 :
             #recomendaciones de prevención 
             print('A continuación se mostrarán tips emitidos por la OMS (Organización Mundial de la Salud')
-            print('para prevenir el contagio ')
+            print('Porfavor eliga que apartado desea consultar: ')
+            print(' ')
+            print('1. Qué hacer para mantenerse y mantener a los demás a salvo de la COVID-19.')
+            print('2. Indicaciones básicas sobre la manera de ponerse la mascarilla.')
+            print('3. Normas básicas de la buena higiene')
+            print('4. Cómo reforzar la seguridad de su entorno')
+            print(' ')
+            p_num=int(input())
+            if p_num == 1:
+                print('-----------------------------------------------------------------')
+                print('Qué hacer para mantenerse y mantener a los demás a salvo de la COVID-19:')
+                print('')
+                print('- Guarde al menos 1 metro de distancia entre usted y otras personas. Cuanto mayor distancia, mejor.')
+                print('- Convierta el uso de la mascarilla en una parte normal de su interacción con otras personas.')
+                print('- Evite ir a lugares bastante concurridos.')
+                print('')
+                #FALTANTE:Poner para que se regrese al inicio
+            elif p_num == 2:
+                print('-----------------------------------------------------------------')
+                print('Indicaciones básicas sobre la manera de ponerse la mascarilla:')
+                print('')
+                print('- Lávese las manos antes de ponerse la mascarilla, y también antes y después de quitársela y cada vez que la toque.')
+                print('- Asegúrese de que le cubre la nariz, la boca y el mentón.')
+                print('- Cuando se quite la mascarilla, guárdela en una bolsa de plástico limpia.')
+                print('- No utilice mascarillas con válvulas.')
+                print('')
+                #FALTANTE:Poner para que pregunte si se quiere regresar al inicio
+            elif p_num == 3:
+                print('-----------------------------------------------------------------')
+                print('Qué hacer para mantenerse y mantener a los demás a salvo de la COVID-19:')
+                print('')
+                print('Guarde al menos 1 metro de distancia entre usted y otras personas. Cuanto mayor distancia, mejor.')
+                print('Convierta el uso de la mascarilla en una parte normal de su interacción con otras personas.')
+                print('Evite ir a lugares bastante concurridos.')
+                print('')
+            elif p_num == 4:
+                print('-----------------------------------------------------------------')
+                print('Qué hacer para mantenerse y mantener a los demás a salvo de la COVID-19:')
+                print('')
+                print('Guarde al menos 1 metro de distancia entre usted y otras personas. Cuanto mayor distancia, mejor.')
+                print('Convierta el uso de la mascarilla en una parte normal de su interacción con otras personas.')
+                print('Evite ir a lugares bastante concurridos.')
+                print('')
+            else:
+                print('Por favor eliga una opción valida.')
+
+
         else :
         #que te vuelva a preguntar hasta que contestes un numero
             print('Porfavor ingrese una opcion valida')
