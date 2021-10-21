@@ -1,9 +1,5 @@
-def semaforos():
-    #aquí van en que semaforo se encuentran los estados 
-  sinaloa = "verde"  
 def main():
     #escribe tu código abajo de esta línea
-    pass
     reg = "si" 
     print('-------------------------------------------')
     print('Base de datos COVID-19 México')
