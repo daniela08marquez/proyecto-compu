@@ -21,7 +21,7 @@ def main():
         num=int(input("Teclee el numero que coorresponda al apartado que sea de su interés: "))
         if num == "1" :
             print('¿A que nivel te gustaría consultar los datos?')
-            print(' ')
+            print(' hola')
             print(' 1.- Nacional ')
             print(' 2.- Estatal ')
             num1= int(input())
