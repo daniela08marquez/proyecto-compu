@@ -64,6 +64,11 @@ def main():
             print(' 1.- Ver sintomas  ')
             print(' 2.- Tomar test  ')
             num4= int(input())
+            if num4 == 1 :
+                print('-----------------------------------------------------------------')
+                print('De acuerdo con la OMS, los sintomas de COVID-19 son los siguientes:')
+            else:
+                print('-----------------------------------------------------------------')
         
         elif num == 5 :
             #recomendaciones de prevención 
@@ -73,9 +78,9 @@ def main():
             print('1. Qué hacer para mantenerse y mantener a los demás a salvo de la COVID-19.')
             print('2. Indicaciones básicas sobre la manera de ponerse la mascarilla.')
             print('3. Normas básicas de la buena higiene')
-            print('4. Cómo reforzar la seguridad de su entorno')
             print(' ')
-            p_num=int(input())
+            num5=int(input())
+
             if p_num == 1:
                 print('-----------------------------------------------------------------')
                 print('Qué hacer para mantenerse y mantener a los demás a salvo de la COVID-19:')
@@ -84,7 +89,8 @@ def main():
                 print('- Convierta el uso de la mascarilla en una parte normal de su interacción con otras personas.')
                 print('- Evite ir a lugares bastante concurridos.')
                 print('')
-                #FALTANTE:Poner para que se regrese al inicio
+                #FALTANTE:Poner para que pregunte si se quiere regresar al inicio
+               
             elif p_num == 2:
                 print('-----------------------------------------------------------------')
                 print('Indicaciones básicas sobre la manera de ponerse la mascarilla:')
@@ -95,22 +101,18 @@ def main():
                 print('- No utilice mascarillas con válvulas.')
                 print('')
                 #FALTANTE:Poner para que pregunte si se quiere regresar al inicio
+
             elif p_num == 3:
                 print('-----------------------------------------------------------------')
-                print('Qué hacer para mantenerse y mantener a los demás a salvo de la COVID-19:')
+                print('Normas básicas de la buena higiene:')
                 print('')
-                print('Guarde al menos 1 metro de distancia entre usted y otras personas. Cuanto mayor distancia, mejor.')
-                print('Convierta el uso de la mascarilla en una parte normal de su interacción con otras personas.')
-                print('Evite ir a lugares bastante concurridos.')
+                print('- Lávese periódica y cuidadosamente las manos con un gel hidroalcohólico o con agua y jabón. ')
+                print('- Evite tocarse los ojos, la nariz y la boca. ')
+                print('- Al toser o estornudar cúbrase la boca y la nariz con el codo flexionado o con un pañuelo.')
+                print('- Limpie y desinfecte frecuentemente las superficies, en particular las que se tocan con regularidad.')
                 print('')
-            elif p_num == 4:
-                print('-----------------------------------------------------------------')
-                print('Qué hacer para mantenerse y mantener a los demás a salvo de la COVID-19:')
-                print('')
-                print('Guarde al menos 1 metro de distancia entre usted y otras personas. Cuanto mayor distancia, mejor.')
-                print('Convierta el uso de la mascarilla en una parte normal de su interacción con otras personas.')
-                print('Evite ir a lugares bastante concurridos.')
-                print('')
+                #FALTANTE:Poner para que pregunte si se quiere regresar al inicio
+
             else:
                 print('Por favor eliga una opción valida.')
 
