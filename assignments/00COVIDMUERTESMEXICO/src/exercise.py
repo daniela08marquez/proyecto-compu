@@ -112,6 +112,8 @@ def main():
                 print('- Limpie y desinfecte frecuentemente las superficies, en particular las que se tocan con regularidad.')
                 print('')
                 #FALTANTE:Poner para que pregunte si se quiere regresar al inicio
+                reg = input ('¿Quieres volver al menú princial?')
+                #FALTANTE:poner funcion para que finalice el programa 
 
             else:
                 print('Por favor eliga una opción valida.')
