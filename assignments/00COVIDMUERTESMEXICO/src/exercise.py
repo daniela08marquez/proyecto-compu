@@ -48,6 +48,14 @@ def main():
             print(' 1.- Nacional ')
             print(' 2.- Estatal ')
             num2= int(input())
+            if num2==1:
+                print('Seleccione su estado:')
+                #agregar matriz de los estados 
+            elif num2==2: 
+                print('')
+            else: 
+                print('')
+
 
         elif num == 3 :
             #semaforos 
@@ -56,6 +64,14 @@ def main():
             print(' 1.- Nacional ')
             print(' 2.- Estatal ')
             num3= int(input())
+            if num3==1:
+                print('')
+            elif num3==2: 
+                print('')
+                print('Seleccione su estado:')
+                #agregar matriz de los estados 
+            else: 
+                print('')
 
         elif num == 4 :
             #sintomas, agregar un contador por cada pregunta 
@@ -66,7 +82,12 @@ def main():
             num4= int(input())
             if num4 == 1 :
                 print('-----------------------------------------------------------------')
-                print('De acuerdo con la OMS, los sintomas de COVID-19 son los siguientes:')
+                print('De acuerdo con la OMS, los sintomas de COVID-19 mas habituales son los siguientes:')
+                sintomas=['- Fiebre', '- Tos', '- Cansancio', '- Pérdida del gusto o del olfato']
+                #matrices que digan los sintomas 
+            elif num5== 2:
+                #hacer contador con las respuestas que vaya dando la persona
+               print('') 
             else:
                 print('-----------------------------------------------------------------')
         
@@ -90,6 +111,7 @@ def main():
                 print('- Evite ir a lugares bastante concurridos.')
                 print('')
                 #FALTANTE:Poner para que pregunte si se quiere regresar al inicio
+                reg = input ('¿Quieres volver al menú princial?')
                
             elif p_num == 2:
                 print('-----------------------------------------------------------------')
@@ -101,6 +123,7 @@ def main():
                 print('- No utilice mascarillas con válvulas.')
                 print('')
                 #FALTANTE:Poner para que pregunte si se quiere regresar al inicio
+                reg = input ('¿Quieres volver al menú princial?')
 
             elif p_num == 3:
                 print('-----------------------------------------------------------------')
@@ -112,6 +135,8 @@ def main():
                 print('- Limpie y desinfecte frecuentemente las superficies, en particular las que se tocan con regularidad.')
                 print('')
                 #FALTANTE:Poner para que pregunte si se quiere regresar al inicio
+                reg = input ('¿Quieres volver al menú princial?')
+                #FALTANTE:poner funcion para que finalice el programa 
 
             else:
                 print('Por favor eliga una opción valida.')
