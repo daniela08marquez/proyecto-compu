@@ -1,38 +1,4 @@
-def estados() :
-    e1 = 'Baja California'
-    e2 = 'Chihuahua'
-    e3 = 'Cohahuila'
-    e4 = 'Jalisco'
-    e5 = 'Aguascalientes'
-    e6 = 'Colima'
-    e7 = 'Guanajuato'
-    e8 = 'Queretaro'
-    e9 = 'Morelos'
-    e10 = 'Tabasco'
-    e11 = 'Campeche'
-    e12 = 'Yucatan'
-    e13 = 'Sonora'
-    e14 = 'Baja California sur'
-    e15 = 'Sinaloa'
-    e16 = 'Durango'
-    e17 = 'Nayarit'
-    e18 = 'Zacatecas'
-    e19 = 'San Luis Potosi'
-    e20 = 'Nuevo Leon'
-    e21 = 'Tamaulipas'
-    e22 = 'Veracruz'
-    e23 = 'Puebla'
-    e24 = 'Tlaxcala'
-    e25 = 'Hidalgo'
-    e26 = 'Estado de México'
-    e27 = 'Ciudad de México'
-    e28 = 'Michoacan'
-    e29 = 'Guerrero'
-    e30 = 'Oaxaca'
-    e31 = 'Chiapas'
-    e32 = 'Quintana Roo'
 def main():
-    estados()
     #escribe tu código abajo de esta línea
     reg = "si" 
     print('-------------------------------------------')
