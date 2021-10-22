@@ -60,8 +60,8 @@ def main():
             print('El numero de muertes acumuladas en México desde Marzo 2020 hasta Octubre 2021 es de 284,295.') 
             g = input('¿Desea ver las graficas muertes de hombres y mujeres por edades? (si o no)')
             if g == 'si': 
-                grafico_muertes_hombres()
                 grafico_muertes_mujeres()
+                grafico_muertes_hombres()
                 reg = input('¿Desea volver al menú principal? (si o no) ') 
             else: 
                 reg = input('¿Desea volver al menú principal? (si o no) ') 
