@@ -275,7 +275,10 @@ def main():
             reg = input('¿Desea volver al menu principal? ')
         
         if reg == 'no' :
-            print ('Sale bye suerte en la vida')
+            print('Recuerde seguir las indicaciones emitidas por las autoridades')
+            print('para cuidarse a usted y sus seres queridos. ')
+            print ('Muchas gracias por usar nuestro programa c:')
+            print('A fregar a toda su mauser programación')
     
 
 if __name__=='__main__':
