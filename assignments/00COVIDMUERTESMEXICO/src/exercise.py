@@ -1,4 +1,19 @@
 from matplotlib import pyplot as plt
+def grafico_muertes_hombres():
+    print("Grafico de barras")
+
+    edad=["0-4", "5-9", "10-4", "15-19", "20-24","25-29","30-34","35-39","40-44","45-49","50-54","55-59","60-64","65-69","70-74","75-79","80-84","85-89","90-94","95-99"]
+    muertes=[257, 0, 0, 195, 711, 1835, 3307, 5775, 8499, 13256, 16464, 20465, 23105, 23514, 21129, 16763, 11506, 6527, 2260, 563]
+    xs = [i for i,_ in enumerate(edad)]
+    plt.bar(xs, muertes)
+
+    plt.ylabel("# de muertes")
+    plt.title("Muertes de covid (hombre)")
+    plt.xticks([i for i,_ in enumerate(edad)], edad)
+
+    plt.savefig('grafico_muertes_hombres.png')
+    plt.show()
+from matplotlib import pyplot as plt
 
 def main():
     #escribe tu código abajo de esta línea
@@ -29,7 +44,7 @@ def main():
             print('Haz seleccionado el apartado de Número de Muertes por COVID-19.')
             print('')
             print('El numero de muertes acumuladas en México desde Marzo 2020 hasta Octubre 2021 es de 284,295.') 
-            g = input('¿Desea ver las graficas muertes de hombres y mueres por edades?')
+            g = input('¿Desea ver las graficas muertes de hombres y muertes por edades?')
             if g == 'si': 
                 grafico_muertes_hombres()
                 reg = input('¿Desea volver al menú principal? ') 
