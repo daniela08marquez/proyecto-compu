@@ -32,6 +32,7 @@ def estados() :
     e31 = 'Chiapas'
     e32 = 'Quintana Roo'
 def main():
+    estados()
     #escribe tu código abajo de esta línea
     reg = "si" 
     print('-------------------------------------------')
@@ -135,7 +136,7 @@ def main():
                 sintomas=['- Fiebre', '- Tos', '- Cansancio', '- Pérdida del gusto o del olfato']
                 #FALTA: matrices que digan los sintomas 
 
-            elif num5== 2:
+            elif num4== 2:
                 #hacer contador con las respuestas que vaya dando la persona
                 print('Porfavor responda las preguntas siguientes:') 
                 print('')
@@ -175,7 +176,7 @@ def main():
                         cont = cont+1
                 print('-----------------------------------------------------------------')
                 pregunta7=('Dolor muscular:')
-                for r7 in pregunta8 :
+                for r7 in pregunta7 :
                     if r7==respuesta :
                         cont = cont+1
                 print('-----------------------------------------------------------------')
@@ -191,7 +192,7 @@ def main():
                 print('-----------------------------------------------------------------')
                 pregunta10=('Irritación en los ojos(ardor y/o comezón:')
                 for r10 in pregunta10 :
-                    if r1==respuesta :
+                    if r10==respuesta :
                         cont = cont+1
                 print('-----------------------------------------------------------------')
                 if cont<=4:
@@ -230,7 +231,7 @@ def main():
             print(' ')
             num5=int(input())
 
-            if p_num == 1:
+            if num5 == 1:
                 print('-----------------------------------------------------------------')
                 print('Qué hacer para mantenerse y mantener a los demás a salvo de la COVID-19:')
                 print('')
@@ -241,7 +242,7 @@ def main():
                 #FALTANTE:Poner para que pregunte si se quiere regresar al inicio
                 reg = input ('¿Quieres volver al menú princial?')
                
-            elif p_num == 2:
+            elif num5 == 2:
                 print('-----------------------------------------------------------------')
                 print('Indicaciones básicas sobre la manera de ponerse la mascarilla:')
                 print('')
@@ -253,7 +254,7 @@ def main():
                 #FALTANTE:Poner para que pregunte si se quiere regresar al inicio
                 reg = input ('¿Quieres volver al menú princial?')
 
-            elif p_num == 3:
+            elif num5 == 3:
                 print('-----------------------------------------------------------------')
                 print('Normas básicas de la buena higiene:')
                 print('')
