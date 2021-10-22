@@ -26,12 +26,10 @@ def main():
             print('Haz seleccionado el apartado de Numero de Muertes por COVID-19.')
             print('El numero de muertes acumuladas en México de Marzo 2020 a Octubre 2021 es de 284,295') 
             g = input('¿Desea ver las graficas muertes de hombres y mueres por edades?')
-                if 
-
-            reg = int ('¿Desea volver al menu principal? ') 
+            if g == 'si': 
+                print ('sale')
+                reg = int ('¿Desea volver al menu principal? ') 
         
-
-            
 
         elif num == 2 :
             #num casos activos 
