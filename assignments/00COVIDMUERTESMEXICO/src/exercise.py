@@ -110,56 +110,66 @@ def main():
                 print('')
                 print('En los últimos 10 días, ¿Has presentado uno o')
                 print('más de los siguientes signos o síntomas? responde "si" o "no"')
+                cont=0
+                respuesta= 'si'
                 print('-----------------------------------------------------------------')
                 pregunta1=input('Temperatura mayor a 37.5 grados centigrados: ')
-                cont=0
-                respuesta= "si"
                 for r1 in pregunta1 :
+                    respuesta= 'si'
                     if r1==respuesta :
                         cont = cont+1
                 print('-----------------------------------------------------------------')
                 pregunta2=input('Dolor de cabeza intenso: ')
                 for r2 in pregunta2 :
+                    respuesta= 'si'
                     if r2==respuesta :
                         cont = cont+1
                 print('-----------------------------------------------------------------')
                 pregunta3=input('Tos de reciente aparición: ')
                 for r3 in pregunta3 :
+                    respuesta= 'si'
                     if r3==respuesta :
                         cont = cont+1
                 print('-----------------------------------------------------------------')
                 pregunta4=input('Dificultad para respirar: ')
                 for r4 in pregunta4 :
+                    respuesta= 'si'
                     if r4==respuesta :
                         cont = cont+1
                 print('-----------------------------------------------------------------')
                 pregunta5=input('Dificultad para percibir olores: ')
                 for r5 in pregunta5 :
+                    respuesta= 'si'
                     if r5==respuesta :
                         cont = cont+1
                 print('-----------------------------------------------------------------')
                 pregunta6=input('Dificultad para percibir sabores: ')
                 for r6 in pregunta6 :
+                    respuesta= 'si'
                     if r6==respuesta :
                         cont = cont+1
                 print('-----------------------------------------------------------------')
                 pregunta7=input('Dolor muscular: ')
                 for r7 in pregunta7 :
+                    respuesta= 'si'
                     if r7==respuesta :
                         cont = cont+1
                 print('-----------------------------------------------------------------')
                 pregunta8=input('Dolor en las articulaciones: ')
                 for r8 in pregunta8 :
+                    respuesta= 'si'
                     if r8==respuesta :
                         cont = cont+1
                 print('-----------------------------------------------------------------')
                 pregunta9=input('Dolor de garganta o al tragar: ')
                 for r9 in pregunta9 :
+                    respuesta= 'si'
                     if r9==respuesta :
                         cont = cont+1
                 print('-----------------------------------------------------------------')
                 pregunta10=input('Irritación en los ojos(ardor y/o comezón: ')
                 for r10 in pregunta10 :
+                    respuesta= 'si'
                     if r10==respuesta :
                         cont = cont+1
                 print('-----------------------------------------------------------------')
@@ -168,7 +178,7 @@ def main():
                     print('La probabilidad de que padezcas de COVID-19 es baja, pero')
                     print('eso no significa que debas de bajar la guardia, aquí te dejamos')
                     print('algunas recomendaciones a seguir:')
-                    print('-Lavarse las ')
+                    print('-Lavarse las manos con agua y jabón como pimpon')
                     print('- Guarde al menos 1 metro de distancia entre usted y otras personas. Cuanto mayor distancia, mejor.')
                     print('- Convierta el uso de la mascarilla en una parte normal de su interacción con otras personas.')
                     print('- Evite ir a lugares bastante concurridos.')
