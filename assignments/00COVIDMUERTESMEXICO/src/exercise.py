@@ -1,6 +1,7 @@
 def main():
     #escribe tu código abajo de esta línea
     reg = "si" 
+    print('')
     print('-------------------------------------------')
     print('Base de datos COVID-19 México')
     print(' ')
