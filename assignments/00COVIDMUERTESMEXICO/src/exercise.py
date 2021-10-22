@@ -1,8 +1,8 @@
 from matplotlib import pyplot as plt
 def grafico_muertes_hombres():
-    print("Grafico de barras")
+    print("Grafico de barras hombres")
 
-    edad=["0-4", "5-9", "10-4", "15-19", "20-24","25-29","30-34","35-39","40-44","45-49","50-54","55-59","60-64","65-69","70-74","75-79","80-84","85-89","90-94","95-99"]
+    edad=["0-4", "5-9", "10-14", "15-19", "20-24","25-29","30-34","35-39","40-44","45-49","50-54","55-59","60-64","65-69","70-74","75-79","80-84","85-89","90-94","95-99"]
     muertes=[257, 0, 0, 195, 711, 1835, 3307, 5775, 8499, 13256, 16464, 20465, 23105, 23514, 21129, 16763, 11506, 6527, 2260, 563]
     xs = [i for i,_ in enumerate(edad)]
     plt.bar(xs, muertes)
@@ -13,7 +13,21 @@ def grafico_muertes_hombres():
 
     plt.savefig('grafico_muertes_hombres.png')
     plt.show()
-from matplotlib import pyplot as plt
+    
+def grafico_muertes_mujeres():
+    print("Grafico de barras mujeres")
+
+    edad=["0-4", "5-9", "10-14", "15-19", "20-24","25-29","30-34","35-39","40-44","45-49","50-54","55-59","60-64","65-69","70-74","75-79","80-84","85-89","90-94","95-99"]
+    muertes=[215, 0, 0, 218, 489, 1112, 1728, 2678, 3971, 6750, 8870, 12571, 15034, 15466, 13786, 11295, 7840, 4477, 1838, 449]
+    xs = [i for i,_ in enumerate(edad)]
+    plt.bar(xs, muertes)
+
+    plt.ylabel("# de muertes")
+    plt.title("Muertes de covid (mujer)")
+    plt.xticks([i for i,_ in enumerate(edad)], edad)
+
+    plt.savefig('grafico_muertes_mujeres.png')
+    plt.show()
 
 def main():
     #escribe tu código abajo de esta línea
@@ -44,9 +58,10 @@ def main():
             print('Haz seleccionado el apartado de Número de Muertes por COVID-19.')
             print('')
             print('El numero de muertes acumuladas en México desde Marzo 2020 hasta Octubre 2021 es de 284,295.') 
-            g = input('¿Desea ver las graficas muertes de hombres y muertes por edades?')
+            g = input('¿Desea ver las graficas muertes de hombres y mujeres por edades? (si o no)')
             if g == 'si': 
                 grafico_muertes_hombres()
+                grafico_muertes_mujeres()
                 reg = input('¿Desea volver al menú principal? ') 
         
 
