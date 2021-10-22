@@ -1,7 +1,8 @@
+
 def main():
     #escribe tu código abajo de esta línea
     reg = "si" 
-    print('-------------------------------------------')
+    print('-----------------------------------------------------------------')
     print('Base de datos COVID-19 México')
     print(' ')
     nomb = input('¿Cual es tu nombre? ')
@@ -9,19 +10,20 @@ def main():
     print('Bienvenid@ a la base de datos de COVID-19 México, por favor eliga el tipo de datos que le gustaría consultar.')
     print (' ')
     while (reg == "si"): 
-        print("1.-Numero de Muertes por COVID-19. ")
+        print("1.-Número de Muertes por COVID-19. ")
         #dentro de este habrán mas opciones para mostrar la grafica de definciones, a nivel nacional o los puros datos por estado
-        print('2.- Numero de casos activos.')
+        print('2.- Número de casos activos.')
         #también da la opción de ver los datos a nivel estatal o nacional
-        print("3.- Semaforo Epidemologico.")
+        print("3.- Semáforo Epidemiológico.")
         #también da la opción de ver los datos a nivel estatal o nacional
         print("4.- Sintomas de COVID-19.")
         #en este apartado entran las preguntas y dependiendo de cuantas contestes te dice da recomendaciones de que hacer
         print("5.- Protegerse y prevenir el COVID-19.")
         #se da una lista de recomendaciones de como ciudarse pa q no te de cobis 
+        print('')
         num=int(input("Teclee el numero que coorresponda al apartado que sea de su interés: "))
 
-        if num == "1" :
+        if num == 1 :
             print('-----------------------------------------------------------------')
             print('Haz seleccionado el apartado de Numero de Muertes por COVID-19.')
             print('¿A que nivel te gustaría consultar los datos?')
@@ -31,10 +33,13 @@ def main():
             num1= int(input())
             if num1 == 1 : 
                 #numero de muertes 
+                print('-----------------------------------------------------------------')
                 print('El numero de muertes acumuladas en México de Marzo 2020 a Octubre 2021 es de 284,295') 
                 #aqui va la grafica de muertes 
                 reg = int ('¿Desea volver al menu principal? ')
             elif num1 == 2: 
+                #FALTA
+                print('-----------------------------------------------------------------')
                 print ('Seleccione su estado')
                 print ('')
                 reg = int ('¿Desea volver al menu principal? ')
@@ -46,16 +51,14 @@ def main():
             #num casos activos 
             print('-----------------------------------------------------------------')
             print('Haz seleccionado el apartado de Numero de casos activos.')
-            print('¿A que nivel te gustaría consultar los datos? ')
-            print(' ')
-            print(' 1.- Nacional ')
-            print(' 2.- Estatal ')
+            print('A nivel nacional desde Marzo 2020 hasta octubre 2021  ')
             num2= int(input())
+            #FALTANTE
 
         elif num == 3 :
             #semaforos 
             print('-----------------------------------------------------------------')
-            print('Haz seleccionado el apartado de Semaforo Epidemologico.')
+            print('Haz seleccionado el apartado de Semáforo Epidemiológico.')
             print('¿A que nivel te gustaría consultar los datos? ')
             print(' ')
             print(' 1.- Rojo ')
@@ -76,7 +79,8 @@ def main():
                 #matriz estados verdes
                 reg = int ('¿Desea volver al menu principal? ')
             else: 
-                print ('Porfavor ingrese una opcion valid')
+                print ('Porfavor ingrese una opcion valida')
+                #FALTA:poner para que se regrese a poner el numero otra vez
 
         elif num == 4 :
             #sintomas, agregar un contador por cada pregunta 
@@ -91,7 +95,12 @@ def main():
             if num4 == 1 :
                 print('-----------------------------------------------------------------')
                 print('De acuerdo con la OMS, los sintomas de COVID-19 son los siguientes:')
-                sintomas=['- Fiebre', '- Tos', '- Cansancio', '- Pérdida del gusto o del olfato']
+                print('-Fiebre')
+                print('- Tos')
+                print('- Cansancio')
+                print('- Pérdida del gusto o del olfato')
+                print('')
+
                 #FALTA: matrices que digan los sintomas 
 
             elif num5== 2:
@@ -101,7 +110,7 @@ def main():
                 print('En los últimos 10 días, ¿Has presentado uno o')
                 print('más de los siguientes signos o síntomas? responde "si" o "no"')
                 print('-----------------------------------------------------------------')
-                pregunta1=input('Temperatura mayor a 37.5 grados centigrados.')
+                pregunta1=input('Temperatura mayor a 37.5 grados centigrados:')
                 cont=0
                 respuesta= "si" or "SI" or "Si"
                 for r1 in pregunta1 :
@@ -168,11 +177,26 @@ def main():
                     print('El número de sintomas que usted presenta es igual a:'+str(cont))
                     print('La probabilidad de que padezcas de COVID-19 es intermedia,')
                     print('aquí le dejamos algunas recomendaciones a seguir:')
-                    print('Evitar el contacto con otras personas')
-
-
+                    print('-Evitar el contacto con otras personas')
+                    print('-En caso de que los síntomas prevalescan, acudir a un medico')
+                    print('-Lavarse las manos constantemente.')
+                    print('-Uso de cubrebocas al estar con otras personas o en espacios publicos')
+                    print('')
+                    reg = input ('¿Quieres volver al menú princial?')
+                else:
+                    print('El número de sintomas que usted presenta es igual a:'+str(cont))
+                    print('La probabilidad de que padezcas de COVID-19 es bastante alta,')
+                    print('porfavor de realizarse una prueba o consultar con su medico de ')
+                    print('preferencia lo antes posible, Aquí hay algunas recomendaciones a seguir:')
+                    print('-Evitar el contacto con otras personas')
+                    print('-Usar mascarilla')
+                    print('-Despues de realizarse la prueba, permanecer en aislamiento hasta obtener los resultados.')
+                    print('')
+                    reg = input ('¿Quieres volver al menú princial?')
             else:
-                print('-----------------------------------------------------------------')
+                print('Porfavor ingrese un valor valido.')
+                #FALTA: poner para que se regrese
+                
 
         
         elif num == 5 :
