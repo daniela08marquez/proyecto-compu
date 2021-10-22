@@ -231,7 +231,7 @@ def main():
             reg = input('¿Desea volver al menu principal? ')
             #FALTANTE: poner para que se regrese al inicio
     if reg == no :
-        print ()
+        print ('Sale bye suerte en la vida')
     
 
 
