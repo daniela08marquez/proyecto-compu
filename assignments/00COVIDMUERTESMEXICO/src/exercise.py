@@ -30,7 +30,7 @@ def main():
             g = input('¿Desea ver las graficas muertes de hombres y mueres por edades?')
             if g == 'si': 
                 print ('sale')
-                reg = int ('¿Desea volver al menu principal? ') 
+                reg = input('¿Desea volver al menu principal? ') 
         
 
         elif num == 2 :
