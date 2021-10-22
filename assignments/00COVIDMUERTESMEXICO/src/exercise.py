@@ -1,11 +1,40 @@
 def semafororojo() :
-    semrojo = ninguno
+    semro = ninguno
 def semaforonaranja ():
-    semnanranja = 'Baja California'
+    semna = 'Baja California'
 def semaforoamarillo ():
-    semamarillo1 = 'Chihuahua'
-    semamarillo2 = 'Cohahuila'
-    sem
+    sema1 = 'Chihuahua'
+    sema2 = 'Cohahuila'
+    sema3 = 'Jalisco'
+    sema4 = 'Aguascalientes'
+    sema5 = 'Colima'
+    sema6 = 'Guanajuato'
+    sema7 = 'Queretaro'
+    sema8 = 'Morelos'
+    sema9 = 'Tabasco'
+    sema10 = 'Campeche'
+    sema11 = 'Yucatan'
+def semaforoverde ():
+    semv1 = 'Sonora'
+    semv2 = 'Baja California sur'
+    semv3 = 'Sinaloa'
+    semv4 = 'Durango'
+    semv5 = 'Nayarit'
+    semv6 = 'Zacatecas'
+    semv7 = 'San Luis Potosi'
+    semv8 = 'Nuevo Leon'
+    semv9 = 'Tamaulipas'
+    semv10 = 'Veracruz'
+    semv11 = 'Puebla'
+    semv12 = 'Tlaxcala'
+    semv13 = 'Hidalgo'
+    semv14 = 'Estado de México'
+    semv15 = 'Ciudad de México'
+    semv16 = 'Michoacan'
+    semv17 = 'Guerrero'
+    semv18 = 'Oaxaca'
+    semv19 = 'Chiapas'
+    semv20 = 'Quintana Roo'
 def main():
     #escribe tu código abajo de esta línea
     reg = "si" 
@@ -71,6 +100,7 @@ def main():
             num3= int(input())
             if num3 == 1:
                 #matriz estados rojos
+                num3.append 
                 reg = int ('¿Desea volver al menu principal? ')
             elif num3 == 2: 
                 #matriz estados naranja
@@ -240,12 +270,7 @@ def main():
             print('Porfavor ingrese una opcion valida')
             #FALTANTE: poner para que se regrese al inicio
             
-    #aquí se acaba el while reg
-    print('¡Muchas gracias por usar nuestro programa!')
-    print('Recuerde seguir las indicaciónes emitidas por las autoridades para')
-    print('protegerse a sí mismo y sus seres queridos en esta situación de contingencia.')
-    print('-----------------------------------------------------------------------')
-    print('Ponganos 100 profe, nos quedó bien chilo el programa como no.')
+    
 
 
 if __name__=='__main__':
