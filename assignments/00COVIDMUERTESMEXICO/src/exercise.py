@@ -70,18 +70,20 @@ def main():
             elif num3 == 2: 
                 #matriz estados naranja
                 print ('Los estados en semaforo naranja son: ')
-                naranja = [e1]
+                naranja = ['Baja California']
                 print (naranja)
                 reg = input('¿Desea volver al menu principal? ')
             elif num3 == 3:
                 #matriz estados amarillo
                 print ('Los estados en semaforo amarillo son: ')
-                amarilla = ['e2, e3, e4, e5, e6, e7, e8, e9, e10, e11, e12']
+                amarilla = ['Chihuahua, Coahuila, Jalisco, Aguascalientes, Colima, Guanajuato, Querétaro, Morelos, Tabasco, Campeche, Yucatán']
+                print (amarilla)
                 reg = input('¿Desea volver al menu principal? ')
             elif num3 == 4 : 
                 #matriz estados verdes
                 print ('Los estados en semaforo verde son: ')
-                amarilla = ['e13, e14, e15, e16, e17, e18, e19, e20, e21, e22, e23, e24, e25, e26, e27, e28, e29, e30, e31, e32']
+                verde = ['Sonora, Baja California sur, Sinaloa, Durango, Nayarit, Zacatecas, San Luis Potosí, Nuevo León, Tamaulipas, Veracruz, Puebla, Tlaxcala, Hidalgo, Estado de México, Ciudad de México, Michoacán, Guerrero, Oaxaca, Chiapas, Quintana Roo']
+                print (verde)
                 reg = input('¿Desea volver al menu principal? ')
             else: 
                 print ('Porfavor ingrese una opcion valid')
@@ -111,7 +113,7 @@ def main():
                 print('-----------------------------------------------------------------')
                 pregunta1=input('Temperatura mayor a 37.5 grados centigrados: ')
                 cont=0
-                respuesta= "si" or "SI" or "Si"
+                respuesta= "si"
                 for r1 in pregunta1 :
                     if r1==respuesta :
                         cont = cont+1
