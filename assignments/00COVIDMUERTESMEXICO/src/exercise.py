@@ -7,7 +7,7 @@ def main():
     print(' ')
     nomb = input('¿Cuál es tu nombre? ')
     print ('Hola ' + str(nomb))
-    print('Bienvenid@ a la base de datos de COVID-19 México, por favor eliga el tipo de datos que le gustaría consultar.')
+    print('Bienvenid@ a la base de datos de COVID-19 México, por favor eliga el tipo de datos que desea consultar.')
     print (' ')
     while (reg == "si"): 
         print("1.-Número de Muertes por COVID-19. ")
@@ -26,7 +26,7 @@ def main():
             print('-----------------------------------------------------------------')
             print('Haz seleccionado el apartado de Numero de Muertes por COVID-19.')
             print('')
-            print('El numero de muertes acumuladas en México de Marzo 2020 a Octubre 2021 es de 284,295.') 
+            print('El numero de muertes acumuladas en México desde Marzo 2020 hasta Octubre 2021 es de 284,295.') 
             g = input('¿Desea ver las graficas muertes de hombres y mueres por edades?')
             if g == 'si': 
                 print ('t la creiste, no hay graficas jsjs')
@@ -95,8 +95,19 @@ def main():
 
             if num4 == 1 :
                 print('-----------------------------------------------------------------')
-                print('De acuerdo con la OMS, los sintomas de COVID-19 son los siguientes:')
-                print('Fiebre', 'Tos', 'Cansancio' , 'Pérdida del gusto o del olfato')
+                print('De acuerdo con la OMS, los sintomas de COVID-19 son: ')
+                print('Los síntomas más habituales:')
+                print('Fiebre, Tos, Cansancio, Pérdida del gusto o del olfato')
+                print('')
+                print('Los síntomas menos habituales')
+                print('Dolor de garganta, dolor de cabeza, molestias y dolores, ')
+                print('diarrea, Erupción cutánea o pérdida del color de los dedos')
+                print('de las manos o los pies y Ojos rojos o irritados.')
+                print('')
+                print('Los síntomas serios son los siguientes:')
+                print('Dificultad para respirar, pérdida de movilidad o del habla')
+                print('o sensación de confusión y dolor en el pecho.')
+                print('')
                 #FALTA: matrices que digan los sintomas 
                 reg = input('¿Desea volver al menú principal? ')
 
