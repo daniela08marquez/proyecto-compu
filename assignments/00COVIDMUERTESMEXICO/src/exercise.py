@@ -100,8 +100,10 @@ def main():
             num3= int(input())
             if num3 == 1:
                 #matriz estados rojos
-                num3.append 
-                reg = int ('¿Desea volver al menu principal? ')
+                for i in range (len(num3)):
+                    semafororojo.append (num3(i))
+                    print (semafororojo)
+                    reg = int ('¿Desea volver al menu principal? ')
             elif num3 == 2: 
                 #matriz estados naranja
                 reg = int ('¿Desea volver al menu principal? ')
