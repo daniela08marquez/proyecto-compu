@@ -91,6 +91,7 @@ def main():
                 print('-----------------------------------------------------------------')
                 print('De acuerdo con la OMS, los sintomas de COVID-19 son los siguientes:')
                 sintomas=['- Fiebre', '- Tos', '- Cansancio', '- Pérdida del gusto o del olfato']
+                print(sintomas)
                 #FALTA: matrices que digan los sintomas 
 
             elif num4== 2:
