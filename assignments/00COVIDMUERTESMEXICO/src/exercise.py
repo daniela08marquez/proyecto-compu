@@ -27,7 +27,6 @@ def main():
             print('El numero de muertes acumuladas en México de Marzo 2020 a Octubre 2021 es de 284,295') 
             g = input('¿Desea ver las graficas muertes de hombres y mueres por edades?')
             if g == 'si': 
-                #salen las graficas
                 print ('sale')
                 reg = int ('¿Desea volver al menu principal? ') 
         
@@ -36,14 +35,17 @@ def main():
             #num casos activos 
             print('-----------------------------------------------------------------')
             print('Haz seleccionado el apartado de Numero de casos activos.')
+            print('')
             print('A nivel nacional desde Marzo 2020 hasta octubre 2021 hay 3,767,758 casos confirmados')
             print('A nivel nacional desde Marzo 2020 hasta octubre 2021 hay 3,986,789 casos estimados')
+            print('')
             reg = input('¿Desea volver al menu principal? ')
 
         elif num == 3 :
             #semaforos 
             print('-----------------------------------------------------------------')
             print('Haz seleccionado el apartado de Semaforo Epidemologico.')
+            print('')
             print('¿A que nivel te gustaría consultar los datos? ')
             print(' ')
             print(' 1.- Rojo ')
@@ -82,6 +84,7 @@ def main():
             #sintomas, agregar un contador por cada pregunta 
             print('-----------------------------------------------------------------')
             print('Haz seleccionado el apartado de Síntomas.')
+            print('')
             print('Selecciona que quieres hacer: ')
             print(' ')
             print(' 1.- Ver sintomas.  ')
@@ -91,7 +94,7 @@ def main():
             if num4 == 1 :
                 print('-----------------------------------------------------------------')
                 print('De acuerdo con la OMS, los sintomas de COVID-19 son los siguientes:')
-                print('- Fiebre', '- Tos', '- Cansancio', '- Pérdida del gusto o del olfato')
+                print('Fiebre', 'Tos', 'Cansancio' , 'Pérdida del gusto o del olfato')
                 #FALTA: matrices que digan los sintomas 
                 reg = input('¿Desea volver al menu principal? ')
 
@@ -147,6 +150,7 @@ def main():
                 print (cont)
                 if cont<=4:
                     print('El número de sintomas que usted presenta es igual a:'+str(cont))
+                    print('')
                     print('La probabilidad de que padezcas de COVID-19 es baja, pero')
                     print('eso no significa que debas de bajar la guardia, aquí te dejamos')
                     print('algunas recomendaciones a seguir:')
@@ -157,6 +161,7 @@ def main():
                     print('')
                 elif cont>4:
                     print('El número de sintomas que usted presenta es igual a:'+str(cont))
+                    print('')
                     print('La probabilidad de que padezcas de COVID-19 es intermedia,')
                     print('aquí le dejamos algunas recomendaciones a seguir:')
                     print('- Evitar el contacto con otras personas')
@@ -226,8 +231,9 @@ def main():
             reg = input('¿Desea volver al menu principal? ')
             #FALTANTE: poner para que se regrese al inicio
     if reg == no :
-        print ('Bye buena suerte en la vida')            
+        print ()
     
+
 
 if __name__=='__main__':
     main()
