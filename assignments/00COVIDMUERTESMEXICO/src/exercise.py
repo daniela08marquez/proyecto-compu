@@ -24,22 +24,13 @@ def main():
         if num == "1" :
             print('-----------------------------------------------------------------')
             print('Haz seleccionado el apartado de Numero de Muertes por COVID-19.')
-            print('¿A que nivel te gustaría consultar los datos?')
-            print('')
-            print(' 1.- Nacional ')
-            print(' 2.- Estatal ')
-            num1= int(input())
-            if num1 == 1 : 
-                #numero de muertes 
-                print('El numero de muertes acumuladas en México de Marzo 2020 a Octubre 2021 es de 284,295') 
-                #aqui va la grafica de muertes 
-                reg = int ('¿Desea volver al menu principal? ')
-            elif num1 == 2: 
-                print ('Seleccione su estado')
-                print ('')
-                reg = int ('¿Desea volver al menu principal? ')
-            else: 
-                print('Selecione una opcion valida')
+            print('El numero de muertes acumuladas en México de Marzo 2020 a Octubre 2021 es de 284,295') 
+            g = input('¿Desea ver las graficas muertes de hombres y mueres por edades?')
+                if 
+
+            reg = int ('¿Desea volver al menu principal? ') 
+        
+
             
 
         elif num == 2 :
@@ -153,6 +144,7 @@ def main():
                 if pregunta10=='si' :
                     cont = cont+1
                 print('-----------------------------------------------------------------')
+                print (cont)
                 if cont<=4:
                     print('El número de sintomas que usted presenta es igual a:'+str(cont))
                     print('La probabilidad de que padezcas de COVID-19 es baja, pero')
@@ -163,16 +155,14 @@ def main():
                     print('- Convierta el uso de la mascarilla en una parte normal de su interacción con otras personas.')
                     print('- Evite ir a lugares bastante concurridos.')
                     print('')
-                elif cont<=7:
+                elif cont>4:
                     print('El número de sintomas que usted presenta es igual a:'+str(cont))
                     print('La probabilidad de que padezcas de COVID-19 es intermedia,')
                     print('aquí le dejamos algunas recomendaciones a seguir:')
                     print('- Evitar el contacto con otras personas')
                     print('- Acudir al medico')
-
-
-            else:
-                print('-----------------------------------------------------------------')
+                else:
+                    print('-----------------------------------------------------------------')
 
         
         elif num == 5 :
