@@ -1,3 +1,5 @@
+from matplotlib import pyplot as plt
+
 def main():
     #escribe tu código abajo de esta línea
     reg = "si" 
@@ -24,19 +26,19 @@ def main():
 
         if num == 1 :
             print('-----------------------------------------------------------------')
-            print('Haz seleccionado el apartado de Numero de Muertes por COVID-19.')
+            print('Haz seleccionado el apartado de Número de Muertes por COVID-19.')
             print('')
             print('El numero de muertes acumuladas en México desde Marzo 2020 hasta Octubre 2021 es de 284,295.') 
             g = input('¿Desea ver las graficas muertes de hombres y mueres por edades?')
             if g == 'si': 
-                print ('t la creiste, no hay graficas jsjs')
+                grafico_muertes_hombres()
                 reg = input('¿Desea volver al menú principal? ') 
         
 
         elif num == 2 :
             #num casos activos 
             print('-----------------------------------------------------------------')
-            print('Haz seleccionado el apartado de Número de casos activos.')
+            print('Haz seleccionado el apartado de número de casos activos.')
             print('')
             print('- A nivel nacional desde Marzo 2020 hasta octubre 2021 hay 3,767,758 casos confirmados.')
             print('- A nivel nacional desde Marzo 2020 hasta octubre 2021 hay 3,986,789 casos estimados.')
@@ -46,7 +48,7 @@ def main():
         elif num == 3 :
             #semaforos 
             print('-----------------------------------------------------------------')
-            print('Haz seleccionado el apartado de Semaforo Epidemologico.')
+            print('Haz seleccionado el apartado de Semáforo Epidemiológico.')
             print('')
             print('¿A que nivel te gustaría consultar los datos? ')
             print(' ')
@@ -57,30 +59,30 @@ def main():
             num3= int(input())
             if num3 == 1:
                 #matriz estados rojos
-                print ('Los estados en semaforo rojo son: ')
+                print ('Los estados en semáforo rojo son: ')
                 rojo = ['Ninguno']
                 print (rojo)
-                reg = input('¿Desea volver al menu principal? ')
+                reg = input('¿Desea volver al menú principal? ')
             elif num3 == 2: 
                 #matriz estados naranja
-                print ('Los estados en semaforo naranja son: ')
+                print ('Los estados en semáforo naranja son: ')
                 naranja = ['Baja California']
                 print (naranja)
                 reg = input('¿Desea volver al menú principal? ')
             elif num3 == 3:
                 #matriz estados amarillo
-                print ('Los estados en semaforo amarillo son: ')
+                print ('Los estados en semáforo amarillo son: ')
                 amarilla = ['Chihuahua, Coahuila, Jalisco, Aguascalientes, Colima, Guanajuato, Querétaro, Morelos, Tabasco, Campeche, Yucatán']
                 print (amarilla)
-                reg = input('¿Desea volver al menu principal? ')
+                reg = input('¿Desea volver al menú principal? ')
             elif num3 == 4 : 
                 #matriz estados verdes
-                print ('Los estados en semaforo verde son: ')
+                print ('Los estados en semáforo verde son: ')
                 verde = ['Sonora, Baja California sur, Sinaloa, Durango, Nayarit, Zacatecas, San Luis Potosí, Nuevo León, Tamaulipas, Veracruz, Puebla, Tlaxcala, Hidalgo, Estado de México, Ciudad de México, Michoacán, Guerrero, Oaxaca, Chiapas, Quintana Roo']
                 print (verde)
                 reg = input('¿Desea volver al menú principal? ')
             else: 
-                print ('Porfavor ingrese una opción valida.')
+                print ('Por favor ingrese una opción valida.')
 
         elif num == 4 :
             #sintomas, agregar un contador por cada pregunta 
@@ -95,7 +97,7 @@ def main():
 
             if num4 == 1 :
                 print('-----------------------------------------------------------------')
-                print('De acuerdo con la OMS, los sintomas de COVID-19 son: ')
+                print('De acuerdo con la OMS, los síntomas de COVID-19 son: ')
                 print('Los síntomas más habituales:')
                 print('Fiebre, Tos, Cansancio, Pérdida del gusto o del olfato')
                 print('')
@@ -104,7 +106,7 @@ def main():
                 print('diarrea, Erupción cutánea o pérdida del color de los dedos')
                 print('de las manos o los pies y Ojos rojos o irritados.')
                 print('')
-                print('Los síntomas serios son los siguientes:')
+                print('Los síntomas mas serios:')
                 print('Dificultad para respirar, pérdida de movilidad o del habla')
                 print('o sensación de confusión y dolor en el pecho.')
                 print('')
@@ -184,7 +186,7 @@ def main():
                     print('')
                 else:
                     print('-----------------------------------------------------------------')
-                reg = input('¿Desea volver al menu principal? ')
+                reg = input('¿Desea volver al menú principal? ')
 
         
         elif num == 5 :
@@ -193,7 +195,7 @@ def main():
             print('Haz seleccionado el apartado de Protegerse y prevenir el COVID-19.')
             print('')
             print('A continuación se mostrarán tips emitidos por la OMS (Organización Mundial de la Salud')
-            print('Porfavor eliga que apartado desea consultar: ')
+            print('Por favor eliga que apartado desea consultar: ')
             print(' ')
             print('1. Qué hacer para mantenerse y mantener a los demás a salvo del COVID-19.')
             print('2. Indicaciones básicas sobre la manera de ponerse la mascarilla.')
@@ -209,7 +211,7 @@ def main():
                 print('- Convierta el uso de la mascarilla en una parte normal de su interacción con otras personas.')
                 print('- Evite ir a lugares bastante concurridos.')
                 print('')
-                reg = input ('¿Quieres volver al menú princial?')
+                reg = input ('¿Quieres volver al menú principal? ')
                
             elif num5 == 2:
                 print('-----------------------------------------------------------------')
@@ -220,7 +222,7 @@ def main():
                 print('- Cuando se quite la mascarilla, guárdela en una bolsa de plástico limpia.')
                 print('- No utilice mascarillas con válvulas.')
                 print('')
-                reg = input ('¿Quieres volver al menú princial?')
+                reg = input ('¿Quieres volver al menú principal? ')
 
             elif num5 == 3:
                 print('-----------------------------------------------------------------')
@@ -231,7 +233,7 @@ def main():
                 print('- Al toser o estornudar cúbrase la boca y la nariz con el codo flexionado o con un pañuelo.')
                 print('- Limpie y desinfecte frecuentemente las superficies, en particular las que se tocan con regularidad.')
                 print('')
-                reg = input ('¿Quieres volver al menú princial?')
+                reg = input ('¿Quieres volver al menú principal? ')
 
             else:
                 print('Por favor eliga una opción valida.')
@@ -239,7 +241,7 @@ def main():
 
         else :
         #que te vuelva a preguntar hasta que contestes un numero
-            print('Porfavor ingrese una opcion valida')
+            print('Por favor ingrese una opción valida.')
             reg = input('¿Desea volver al menu principal? ')
         
         if reg == 'no' :
