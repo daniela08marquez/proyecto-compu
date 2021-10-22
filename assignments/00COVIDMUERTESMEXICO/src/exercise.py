@@ -62,7 +62,7 @@ def main():
             if g == 'si': 
                 grafico_muertes_hombres()
                 grafico_muertes_mujeres()
-                reg = input('¿Desea volver al menú principal? ') 
+                reg = input('¿Desea volver al menú principal? (si o no) ') 
         
 
         elif num == 2 :
