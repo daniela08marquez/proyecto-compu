@@ -21,12 +21,13 @@ def main():
         #se da una lista de recomendaciones de como ciudarse pa q no te de cobis 
         num=int(input("Teclee el numero que coorresponda al apartado que sea de su interés: "))
 
-        if num == "1" :
+        if num == 1 :
             print('-----------------------------------------------------------------')
             print('Haz seleccionado el apartado de Numero de Muertes por COVID-19.')
             print('El numero de muertes acumuladas en México de Marzo 2020 a Octubre 2021 es de 284,295') 
             g = input('¿Desea ver las graficas muertes de hombres y mueres por edades?')
             if g == 'si': 
+                #salen las graficas
                 print ('sale')
                 reg = int ('¿Desea volver al menu principal? ') 
         
@@ -37,7 +38,7 @@ def main():
             print('Haz seleccionado el apartado de Numero de casos activos.')
             print('A nivel nacional desde Marzo 2020 hasta octubre 2021 hay 3,767,758 casos confirmados')
             print('A nivel nacional desde Marzo 2020 hasta octubre 2021 hay 3,986,789 casos estimados')
-            num2= int(input())
+            reg = input('¿Desea volver al menu principal? ')
 
         elif num == 3 :
             #semaforos 
@@ -90,9 +91,9 @@ def main():
             if num4 == 1 :
                 print('-----------------------------------------------------------------')
                 print('De acuerdo con la OMS, los sintomas de COVID-19 son los siguientes:')
-                sintomas=['- Fiebre', '- Tos', '- Cansancio', '- Pérdida del gusto o del olfato']
-                print(sintomas)
+                print('- Fiebre', '- Tos', '- Cansancio', '- Pérdida del gusto o del olfato')
                 #FALTA: matrices que digan los sintomas 
+                reg = input('¿Desea volver al menu principal? ')
 
             elif num4== 2:
                 #hacer contador con las respuestas que vaya dando la persona
@@ -162,6 +163,7 @@ def main():
                     print('- Acudir al medico')
                 else:
                     print('-----------------------------------------------------------------')
+                reg = input('¿Desea volver al menu principal? ')
 
         
         elif num == 5 :
@@ -221,10 +223,11 @@ def main():
         else :
         #que te vuelva a preguntar hasta que contestes un numero
             print('Porfavor ingrese una opcion valida')
+            reg = input('¿Desea volver al menu principal? ')
             #FALTANTE: poner para que se regrese al inicio
-            
+    if reg == no :
+        print ('Bye buena suerte en la vida')            
     
-
 
 if __name__=='__main__':
     main()
