@@ -1,40 +1,36 @@
-def semafororojo() :
-    semro = ninguno
-def semaforonaranja ():
-    semna = 'Baja California'
-def semaforoamarillo ():
-    sema1 = 'Chihuahua'
-    sema2 = 'Cohahuila'
-    sema3 = 'Jalisco'
-    sema4 = 'Aguascalientes'
-    sema5 = 'Colima'
-    sema6 = 'Guanajuato'
-    sema7 = 'Queretaro'
-    sema8 = 'Morelos'
-    sema9 = 'Tabasco'
-    sema10 = 'Campeche'
-    sema11 = 'Yucatan'
-def semaforoverde ():
-    semv1 = 'Sonora'
-    semv2 = 'Baja California sur'
-    semv3 = 'Sinaloa'
-    semv4 = 'Durango'
-    semv5 = 'Nayarit'
-    semv6 = 'Zacatecas'
-    semv7 = 'San Luis Potosi'
-    semv8 = 'Nuevo Leon'
-    semv9 = 'Tamaulipas'
-    semv10 = 'Veracruz'
-    semv11 = 'Puebla'
-    semv12 = 'Tlaxcala'
-    semv13 = 'Hidalgo'
-    semv14 = 'Estado de México'
-    semv15 = 'Ciudad de México'
-    semv16 = 'Michoacan'
-    semv17 = 'Guerrero'
-    semv18 = 'Oaxaca'
-    semv19 = 'Chiapas'
-    semv20 = 'Quintana Roo'
+def estados() :
+    e1 = 'Baja California'
+    e2 = 'Chihuahua'
+    e3 = 'Cohahuila'
+    e4 = 'Jalisco'
+    e5 = 'Aguascalientes'
+    e6 = 'Colima'
+    e7 = 'Guanajuato'
+    e8 = 'Queretaro'
+    e9 = 'Morelos'
+    e10 = 'Tabasco'
+    e11 = 'Campeche'
+    e12 = 'Yucatan'
+    e13 = 'Sonora'
+    e14 = 'Baja California sur'
+    e15 = 'Sinaloa'
+    e16 = 'Durango'
+    e17 = 'Nayarit'
+    e18 = 'Zacatecas'
+    e19 = 'San Luis Potosi'
+    e20 = 'Nuevo Leon'
+    e21 = 'Tamaulipas'
+    e22 = 'Veracruz'
+    e23 = 'Puebla'
+    e24 = 'Tlaxcala'
+    e25 = 'Hidalgo'
+    e26 = 'Estado de México'
+    e27 = 'Ciudad de México'
+    e28 = 'Michoacan'
+    e29 = 'Guerrero'
+    e30 = 'Oaxaca'
+    e31 = 'Chiapas'
+    e32 = 'Quintana Roo'
 def main():
     #escribe tu código abajo de esta línea
     reg = "si" 
@@ -100,19 +96,26 @@ def main():
             num3= int(input())
             if num3 == 1:
                 #matriz estados rojos
-                for i in range (len(num3)):
-                    semafororojo.append (num3(i))
-                    print (semafororojo)
-                    reg = int ('¿Desea volver al menu principal? ')
+                print ('Los estados en semaforo rojo son: ')
+                rojo = ['Ninguno']
+                print (rojo)
+                reg = input('¿Desea volver al menu principal? ')
             elif num3 == 2: 
                 #matriz estados naranja
-                reg = int ('¿Desea volver al menu principal? ')
+                print ('Los estados en semaforo naranja son: ')
+                naranja = [e1]
+                print (naranja)
+                reg = input('¿Desea volver al menu principal? ')
             elif num3 == 3:
                 #matriz estados amarillo
-                reg = int ('¿Desea volver al menu principal? ')
+                print ('Los estados en semaforo amarillo son: ')
+                amarilla = ['e2, e3, e4, e5, e6, e7, e8, e9, e10, e11, e12']
+                reg = input('¿Desea volver al menu principal? ')
             elif num3 == 4 : 
                 #matriz estados verdes
-                reg = int ('¿Desea volver al menu principal? ')
+                print ('Los estados en semaforo verde son: ')
+                amarilla = ['e13, e14, e15, e16, e17, e18, e19, e20, e21, e22, e23, e24, e25, e26, e27, e28, e29, e30, e31, e32']
+                reg = input('¿Desea volver al menu principal? ')
             else: 
                 print ('Porfavor ingrese una opcion valid')
 
