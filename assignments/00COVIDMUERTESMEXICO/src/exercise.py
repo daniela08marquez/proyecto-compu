@@ -109,54 +109,54 @@ def main():
                 print('En los últimos 10 días, ¿Has presentado uno o')
                 print('más de los siguientes signos o síntomas? responde "si" o "no"')
                 print('-----------------------------------------------------------------')
-                pregunta1=input('Temperatura mayor a 37.5 grados centigrados.')
+                pregunta1=input('Temperatura mayor a 37.5 grados centigrados: ')
                 cont=0
                 respuesta= "si" or "SI" or "Si"
                 for r1 in pregunta1 :
                     if r1==respuesta :
                         cont = cont+1
                 print('-----------------------------------------------------------------')
-                pregunta2=input('Dolor de cabeza intenso:')
+                pregunta2=input('Dolor de cabeza intenso: ')
                 for r2 in pregunta2 :
                     if r2==respuesta :
                         cont = cont+1
                 print('-----------------------------------------------------------------')
-                pregunta3=input('Tos de reciente aparición:')
+                pregunta3=input('Tos de reciente aparición: ')
                 for r3 in pregunta3 :
                     if r3==respuesta :
                         cont = cont+1
                 print('-----------------------------------------------------------------')
-                pregunta4=input('Dificultad para respirar:')
+                pregunta4=input('Dificultad para respirar: ')
                 for r4 in pregunta4 :
                     if r4==respuesta :
                         cont = cont+1
                 print('-----------------------------------------------------------------')
-                pregunta5=input('Dificultad para percibir olores:')
+                pregunta5=input('Dificultad para percibir olores: ')
                 for r5 in pregunta5 :
                     if r5==respuesta :
                         cont = cont+1
                 print('-----------------------------------------------------------------')
-                pregunta6=input('Dificultad para percibir sabores:')
+                pregunta6=input('Dificultad para percibir sabores: ')
                 for r6 in pregunta6 :
                     if r6==respuesta :
                         cont = cont+1
                 print('-----------------------------------------------------------------')
-                pregunta7=('Dolor muscular:')
+                pregunta7=input('Dolor muscular: ')
                 for r7 in pregunta7 :
                     if r7==respuesta :
                         cont = cont+1
                 print('-----------------------------------------------------------------')
-                pregunta8=('Dolor en las articulaciones:')
+                pregunta8=input('Dolor en las articulaciones: ')
                 for r8 in pregunta8 :
                     if r8==respuesta :
                         cont = cont+1
                 print('-----------------------------------------------------------------')
-                pregunta9=('Dolor de garganta o al tragar:')
+                pregunta9=input('Dolor de garganta o al tragar: ')
                 for r9 in pregunta9 :
                     if r9==respuesta :
                         cont = cont+1
                 print('-----------------------------------------------------------------')
-                pregunta10=('Irritación en los ojos(ardor y/o comezón:')
+                pregunta10=input('Irritación en los ojos(ardor y/o comezón: ')
                 for r10 in pregunta10 :
                     if r10==respuesta :
                         cont = cont+1
