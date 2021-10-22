@@ -5,7 +5,7 @@ def grafico_muertes_hombres():
     edad=["0-4", "5-9", "10-14", "15-19", "20-24","25-29","30-34","35-39","40-44","45-49","50-54","55-59","60-64","65-69","70-74","75-79","80-84","85-89","90-94","95-99"]
     muertes=[257, 0, 0, 195, 711, 1835, 3307, 5775, 8499, 13256, 16464, 20465, 23105, 23514, 21129, 16763, 11506, 6527, 2260, 563]
     xs = [i for i,_ in enumerate(edad)]
-    plt.bar(xs, muertes)
+    plt.bar(xs, muertes, color = "b")
 
     plt.ylabel("# de muertes")
     plt.title("Muertes de covid (hombre)")
@@ -20,7 +20,7 @@ def grafico_muertes_mujeres():
     edad=["0-4", "5-9", "10-14", "15-19", "20-24","25-29","30-34","35-39","40-44","45-49","50-54","55-59","60-64","65-69","70-74","75-79","80-84","85-89","90-94","95-99"]
     muertes=[215, 0, 0, 218, 489, 1112, 1728, 2678, 3971, 6750, 8870, 12571, 15034, 15466, 13786, 11295, 7840, 4477, 1838, 449]
     xs = [i for i,_ in enumerate(edad)]
-    plt.bar(xs, muertes)
+    plt.bar(xs, muertes, color = "r")
 
     plt.ylabel("# de muertes")
     plt.title("Muertes de covid (mujer)")
@@ -62,6 +62,8 @@ def main():
             if g == 'si': 
                 grafico_muertes_hombres()
                 grafico_muertes_mujeres()
+                reg = input('¿Desea volver al menú principal? (si o no) ') 
+            else: 
                 reg = input('¿Desea volver al menú principal? (si o no) ') 
         
 
