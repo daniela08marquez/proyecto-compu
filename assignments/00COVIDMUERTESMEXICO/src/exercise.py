@@ -208,7 +208,7 @@ def main():
                     print('- Evite ir a lugares bastante concurridos.')
                     print('')
                 elif cont>4:
-                    print('El número de sintomas que usted presenta es igual a:'+str(cont))
+                    print('El número de sintomas que usted presenta es igual a: '+str(cont))
                     print('')
                     print('La probabilidad de que padezcas de COVID-19 es intermedia,')
                     print('aquí le dejamos algunas recomendaciones a seguir:')
@@ -279,8 +279,8 @@ def main():
         if reg == 'no' :
             print('Recuerde seguir las indicaciones emitidas por las autoridades')
             print('para cuidarse a usted y sus seres queridos. ')
-            print ('Muchas gracias por usar nuestro programa c:')
-            print('A fregar a toda su mauser programación <3')
+            print('Muchas gracias por usar nuestro programa c:')
+            
     
 
 if __name__=='__main__':
