@@ -1,4 +1,49 @@
 from matplotlib import pyplot as plt
+def guardar_matrizhombres(m):
+    with open('graficas_hombres_covid.csv', 'w') as archivo:
+        for i in m:
+            renglon = ""
+            for j in i:
+                renglon = renglon + str(j) + ","
+            renglon = renglon[:-1]
+            renglon = renglon + "\n"
+            archivo.write(renglon)
+
+def cargar_matrizhombres():
+    m=[]
+    with open('graficas_hombres_covid.csv', 'r') as archivo:
+        for linea in archivo : 
+            lista =[]
+            lista_linea = linea.split(',')
+            for elemento in lista_linea: 
+                elemento = elemento.replace("\n","")
+                lista.append(int(elemento))
+            m.append(lista)
+    return m
+
+def guardar_matrizmujeres(m):
+    with open('graficas_mujeres_covid.csv', 'w') as archivo:
+        for i in m:
+            renglon = ""
+            for j in i:
+                renglon = renglon + str(j) + ","
+            renglon = renglon[:-1]
+            renglon = renglon + "\n"
+            archivo.write(renglon)
+
+def cargar_matrizmujeres():
+    m=[]
+    with open('graficas_mujeres_covid.csv', 'r') as archivo:
+        for linea in archivo : 
+            lista =[]
+            lista_linea = linea.split(',')
+            for elemento in lista_linea: 
+                elemento = elemento.replace("\n","")
+                lista.append(int(elemento))
+            m.append(lista)
+    return m
+
+
 def grafico_muertes_hombres():
     print("Grafico de barras hombres")
 
@@ -13,7 +58,7 @@ def grafico_muertes_hombres():
 
     plt.savefig('grafico_muertes_hombres.png')
     plt.show()
-    
+
 def grafico_muertes_mujeres():
     print("Grafico de barras mujeres")
 
@@ -62,6 +107,8 @@ def main():
             if g == 'si': 
                 grafico_muertes_mujeres()
                 grafico_muertes_hombres()
+                cargar_matrizhombres()
+                cargar_matrizmujeres()
                 reg = input('¿Desea volver al menú principal? (si o no) ') 
             else: 
                 reg = input('¿Desea volver al menú principal? (si o no) ') 
